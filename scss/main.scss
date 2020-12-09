@@ -18,13 +18,13 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: #033894;
     @include easeOut;
   }
 }
 .navbar {
   .nav-item .nav-link {
-    color: black;
+    color: #033894;
     margin: 10px;
     font-weight: 700;
     &:hover {
