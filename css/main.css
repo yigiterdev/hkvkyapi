@@ -25,8 +25,8 @@
     transition: all 0.5s ease-out; }
 
 .navbar {
-  border-bottom: 2px solid #2a22a7;
-  background-color: #1b116d; }
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+  background: linear-gradient(to right, #182848, #4b6cb7); }
   .navbar .nav-item .nav-link {
     color: white;
     margin: 10px;
@@ -38,20 +38,31 @@
       transition: all 0.5s ease-out; }
 
 #main {
-  background-color: #4169e1; }
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+  background: linear-gradient(to right, #182848, #4b6cb7); }
 
 #info {
-  background-color: #6495ed;
+  background: #141e30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243b55, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ffffff; }
   #info h4 {
     font-weight: 700; }
 
 #footer {
-  background-color: #bbd0f7;
-  color: #5e5e5e; }
+  background: #000428;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white; }
 
 .card {
-  background-color: #4169e1;
+  background: transparent;
   color: white; }
   .card h1 {
     color: white;
@@ -59,7 +70,7 @@
   .card h5 {
     font-weight: 700; }
   .card .card-header {
-    background-color: #4169e1; }
+    background-color: transparent; }
   .card .btn {
     background-color: white;
     color: #1b61e4; }
