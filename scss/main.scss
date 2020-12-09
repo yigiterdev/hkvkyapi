@@ -24,7 +24,7 @@
 }
 .navbar {
   .nav-item .nav-link {
-    color: white;
+    color: black;
     margin: 10px;
     font-weight: 700;
     &:hover {
@@ -34,63 +34,40 @@
       @include easeOut;
     }
   }
-  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
-  background: linear-gradient(to right, #182848, #4b6cb7);
+  background-color: white;
 }
 #main {
   //background-color: #4169e1;
-  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
-  background: linear-gradient(to right, #182848, #4b6cb7);
+  background-color: #ecefed;
 }
 #info {
-  background: #141e30; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #033894;
   color: #ffffff;
   h4 {
     font-weight: 700;
   }
 }
 #footer {
-  background: #000428; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #004e92,
-    #000428
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #004e92,
-    #000428
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: black;
   color: white;
 }
 .card {
   //background-color: #4169e1;
   background: transparent;
   h1 {
-    color: white;
     font-weight: 700;
+    color: #023895;
   }
   h5 {
+    color: #023895;
     font-weight: 700;
   }
   .card-header {
     background-color: transparent;
   }
   .btn {
-    background-color: white;
-    color: #1b61e4;
+    background-color: #023895;
+    color: white;
   }
-  color: white;
+  color: #0a0a0a;
 }
