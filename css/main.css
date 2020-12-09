@@ -2,7 +2,9 @@
 @media screen and (max-width: 768px) {
   #navbarCollapse {
     align-items: center;
-    text-align: center; } }
+    text-align: center; }
+  #images {
+    padding-bottom: 75px; } }
 
 * {
   box-sizing: border-box;
@@ -23,9 +25,10 @@
     transition: all 0.5s ease-out; }
 
 .navbar {
-  border-bottom: 2px solid #2a22a7; }
+  border-bottom: 2px solid #2a22a7;
+  background-color: #1b116d; }
   .navbar .nav-item .nav-link {
-    color: #333;
+    color: white;
     margin: 10px;
     font-weight: 700; }
     .navbar .nav-item .nav-link:hover {
@@ -35,21 +38,28 @@
       transition: all 0.5s ease-out; }
 
 #main {
-  margin-top: 30px; }
-  #main h1 {
-    font-weight: 700;
-    color: #2a22a7; }
-  #main .btn {
-    background-color: #2a22a7; }
-  #main h5 {
-    font-weight: 700; }
+  background-color: #4169e1; }
 
 #info {
-  background-color: #1a1a1a;
-  color: #9c9c9c; }
+  background-color: #6495ed;
+  color: #ffffff; }
   #info h4 {
     font-weight: 700; }
 
 #footer {
-  background-color: #000000;
+  background-color: #bbd0f7;
   color: #5e5e5e; }
+
+.card {
+  background-color: #4169e1;
+  color: white; }
+  .card h1 {
+    color: white;
+    font-weight: 700; }
+  .card h5 {
+    font-weight: 700; }
+  .card .card-header {
+    background-color: #4169e1; }
+  .card .btn {
+    background-color: white;
+    color: #1b61e4; }

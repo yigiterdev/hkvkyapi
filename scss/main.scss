@@ -25,7 +25,7 @@
 }
 .navbar {
   .nav-item .nav-link {
-    color: #333;
+    color: white;
     margin: 10px;
     font-weight: 700;
     &:hover {
@@ -36,28 +36,37 @@
     }
   }
   border-bottom: 2px solid $primary-color;
+  background-color: #1b116d;
 }
 #main {
-  margin-top: 30px;
-  h1 {
-    font-weight: 700;
-    color: $primary-color;
-  }
-  .btn {
-    background-color: $primary-color;
-  }
-  h5 {
-    font-weight: 700;
-  }
+  background-color: #4169e1;
 }
 #info {
-  background-color: #1a1a1a;
-  color: #9c9c9c;
+  background-color: #6495ed;
+  color: #ffffff;
   h4 {
     font-weight: 700;
   }
 }
 #footer {
-  background-color: #000000;
+  background-color: #bbd0f7;
   color: #5e5e5e;
+}
+.card {
+  background-color: #4169e1;
+  h1 {
+    color: white;
+    font-weight: 700;
+  }
+  h5 {
+    font-weight: 700;
+  }
+  .card-header {
+    background-color: #4169e1;
+  }
+  .btn {
+    background-color: white;
+    color: #1b61e4;
+  }
+  color: white;
 }
