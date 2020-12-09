@@ -1,0 +1,14 @@
+{
+  "name": "hkvkyapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Sass": "node-sass -w scss/ -o css/  —recursive"
+  },
+  "author": "yigiter.dev",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
