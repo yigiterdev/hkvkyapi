@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-@media screen and (max-width: 768px) {
-  #navbarCollapse {
-    align-items: center;
-    text-align: center; }
-  #images {
-    padding-bottom: 75px; } }
-
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif; }
@@ -24,20 +17,27 @@
     background: #033894;
     transition: all 0.5s ease-out; }
 
-.navbar {
-  background-color: white; }
-  .navbar .nav-item .nav-link {
-    color: #033894;
-    margin: 10px;
-    font-weight: 700; }
-    .navbar .nav-item .nav-link:hover {
-      background-color: #2a22a7;
-      color: #ffffff;
-      border-radius: 15px;
-      transition: all 0.5s ease-out; }
+.navbar .nav-item .nav-link {
+  color: #033894;
+  margin: 10px;
+  font-weight: 700; }
+  .navbar .nav-item .nav-link:hover {
+    background-color: #2a22a7;
+    color: #ffffff;
+    border-radius: 15px;
+    transition: all 0.5s ease-out; }
 
 #main {
-  background-color: #ecefed; }
+  background-image: url("../img/cBAIbn.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+.text {
+  padding-top: 150px; }
+  .text h1 {
+    color: #2a22a7;
+    font-weight: 700; }
 
 #info {
   background: #033894;
@@ -49,17 +49,26 @@
   background: black;
   color: white; }
 
-.card {
-  background: transparent;
-  color: #0a0a0a; }
-  .card h1 {
-    font-weight: 700;
-    color: #023895; }
-  .card h5 {
-    color: #023895;
-    font-weight: 700; }
-  .card .card-header {
-    background-color: transparent; }
-  .card .btn {
-    background-color: #023895;
-    color: white; }
+.swiper-container {
+  width: 50%;
+  height: 100%; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media screen and (max-width: 768px) {
+  #navbarCollapse {
+    align-items: center;
+    text-align: center; }
+  #images {
+    padding-bottom: 75px; }
+  #main {
+    padding: 20px 0; } }

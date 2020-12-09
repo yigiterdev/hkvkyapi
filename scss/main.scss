@@ -1,5 +1,5 @@
 @import "config";
-@import "mobile";
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
@@ -34,11 +34,22 @@
       @include easeOut;
     }
   }
-  background-color: white;
 }
 #main {
   //background-color: #4169e1;
-  background-color: #ecefed;
+  background-image: url("../img/cBAIbn.jpg");
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+}
+.text {
+  padding-top: 150px;
+
+  h1 {
+    color: $primary-color;
+    font-weight: 700;
+  }
 }
 #info {
   background: #033894;
@@ -51,23 +62,23 @@
   background: black;
   color: white;
 }
-.card {
-  //background-color: #4169e1;
-  background: transparent;
-  h1 {
-    font-weight: 700;
-    color: #023895;
-  }
-  h5 {
-    color: #023895;
-    font-weight: 700;
-  }
-  .card-header {
-    background-color: transparent;
-  }
-  .btn {
-    background-color: #023895;
-    color: white;
-  }
-  color: #0a0a0a;
+
+.swiper-container {
+  width: 50%;
+  height: 100%;
 }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+@import "mobile";
