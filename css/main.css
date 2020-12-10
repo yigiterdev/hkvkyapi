@@ -107,7 +107,7 @@
     font-weight: 700; }
 
 #main-contact {
-  background-image: url("../img/1928e537.jpeg");
+  background-image: url("../img/wallpaperflare.com_wallpaper.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -141,6 +141,34 @@
   width: 100%;
   /* The width is the width of the web page */ }
 
+#main-projects {
+  background-image: url("../img/wallpaperflare.com_wallpaper kopyası.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
+  min-height: 200px;
+  background-attachment: fixed; }
+  #main-projects h1 {
+    color: white; }
+  #main-projects .navbar .nav-item .nav-link {
+    color: white;
+    margin: 10px;
+    font-weight: 700; }
+    #main-projects .navbar .nav-item .nav-link:hover {
+      background-color: #2a22a7;
+      color: #ffffff;
+      border-radius: 15px;
+      transition: all 0.5s ease-out; }
+
+#projects h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2a22a7; }
+
 @media screen and (max-width: 768px) {
   #navbarCollapse {
     align-items: center;
@@ -151,6 +179,8 @@
   #main_about {
     background-attachment: scroll; }
   #main-contact {
+    background-attachment: scroll; }
+  #main-projects {
     background-attachment: scroll; }
   .swiper-container {
     width: 100%;
