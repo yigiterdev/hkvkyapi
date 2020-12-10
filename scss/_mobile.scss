@@ -3,10 +3,13 @@
     align-items: center;
     text-align: center;
   }
-  #images {
-  }
+
   #main {
     padding: 20px 0;
+    background-attachment: scroll;
+  }
+  #main-about {
+    background-attachment: scroll;
   }
   .swiper-container {
     width: 100%;

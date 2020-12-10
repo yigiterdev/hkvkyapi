@@ -109,7 +109,10 @@
     align-items: center;
     text-align: center; }
   #main {
-    padding: 20px 0; }
+    padding: 20px 0;
+    background-attachment: scroll; }
+  #main-about {
+    background-attachment: scroll; }
   .swiper-container {
     width: 100%;
     height: 100%;
