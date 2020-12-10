@@ -11,41 +11,79 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Hello, world!</title>
+    <title>Bize Ulaşın | HKV Yapı</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md fixed-top">
-      <div class="container">
-        <img src="img/logo_big.jpg" alt="" class="navbar-brand" width="125" />
+    <section id="main-contact">
 
-        <div
-          class="menu-btn navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
+        <div class="container d-table w-100">
+          <nav class="navbar navbar-expand-md">
+            <div class="container">
+              <img src="img/logo_big-removebg-preview.png" alt="" class="navbar-brand" width="125" />
+      
+              <div
+                class="menu-btn navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbarCollapse"
+              >
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+              </div>
+      
+              <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link active">Hakkımızda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Bize Ulaşın</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="projects.html" class="nav-link active"
+                      >Tamamlanan Projeler</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="text text-center">
+            <div class="text-body">
+              <h1 class="text-title mt-4">Bize Ulaşın</h5>
+            </div>
+          </div>
         </div>
-
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active">Anasayfa</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link active">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link active">Bize Ulaşın</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link active">Tamamlanan Projeler</a>
-            </li>
-          </ul>
+      </section>
+      <section id="contact">
+        <div class="container p-4">
+            <h1 class="text-center">Bize Mail ile Gönderin</h1>
+            <form name="contact" method = "POST" data-netlify = "true">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">İsim - Soyisim</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email Adresiniz</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mesajınız</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </div>
+            </form>
+           
+                <h1 class="text-center">Adresimiz</h1>
+                <div id="map"></div>
         </div>
-      </div>
-    </nav>
+        
+      </section>
     <section id="info">
         <div class="container">
           <div class="row text-center">
@@ -76,6 +114,27 @@
               <p>COPYRİGHT © 2020 HKVYAPİ.COM. ALL RİGHTS RESERVED. | yigiter.dev</p>
           </div>
       </section>
+      <script>
+          function initMap() {
+  // The location of Uluru
+        const uluru = { lat: 39.909518, lng: 32.817677 };
+  // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 18,
+        center: uluru,
+    });
+  // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+    });
+}
+      </script>
+      <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMLprnhtpIAEE0DMEyYMrrmMbFccd7T64&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>  
+   
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
