@@ -60,25 +60,79 @@
       </section>
       <section id="contact">
         <div class="container p-4">
-            <h1 class="text-center">Bize Mail ile Gönderin</h1>
-            <form name="contact" method = "POST" data-netlify = "true">
-                <input type='hidden' name='form-name' value='contact-form' />
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">İsim - Soyisim</label>
-                    <input name = "name" type="text" class="form-control" id="exampleFormControlInput1" required>
+            <h1 class="text-center">Bize Mail Gönderin</h1>
+            <form id='contact-form' method='POST' class="p-4"><input type='hidden' name='form-name' value='contact-form' />
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name contact-form"
+                    placeholder="İsim - Soyisim"
+                    name="name"
+                    required
+                    class="form-control"
+                  />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email Adresiniz</label>
-                    <input name = "email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email contact-form"
+                    name="email"
+                    placeholder="Mail"
+                    required
+                    class="form-control"
+                  />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mesajınız</label>
-                    <textarea name ="message" class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="phone contact-form"
+                    placeholder="Telefon"
+                    name="phone"
+                    required
+                    class="form-control"
+                  />
                 </div>
-                <div class="mb-3">
-                    <button name="submit" type="submit" class="btn btn-primary form form-control">Gönder</button>
+                <div class="form-group">
+                  <textarea
+                    id="message contact-form"
+                    rows="5"
+                    name="message"
+                    placeholder="Mesaj"
+                    required
+                    class="form-control"
+                  ></textarea>
                 </div>
-            </form>
+                <div class="form-group">
+                  <div><script src='https://www.google.com/recaptcha/api.js'></script>
+      <div class='g-recaptcha' data-sitekey='6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'></div>
+      <noscript>
+        <div>
+        <div style="width: 302px; height: 422px; position: relative;">
+        <div style="width: 302px; height: 422px; position: absolute;">
+        <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
+          style="width: 302px; height:422px; border-style: none;">
+        </iframe>
+        </div>
+        </div>
+        <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+          <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+            style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
+          </textarea>
+        </div>
+        </div>
+      </noscript>
+      </div>
+                </div>
+               
+                  <button
+                    type="submit"
+                    name="submit"
+                    class="btn btn-primary form form-control"
+                  >
+                    Send Message
+                  </button>
+                
+              </form>
            
                 <h1 class="text-center">Adresimiz</h1>
                 <div id="map"></div>
