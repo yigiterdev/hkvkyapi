@@ -81,7 +81,6 @@
   background-image: url("../img/c-dustin-91AQt9p4Mo8-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  height: calc(var(--vh, 1vh) * 100);
   height: 100vh;
   min-height: 200px;
   background-attachment: fixed; }
