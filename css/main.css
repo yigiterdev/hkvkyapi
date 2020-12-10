@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
@@ -28,30 +29,21 @@
     transition: all 0.5s ease-out; }
 
 #main {
-  background-image: url("../img/cBAIbn.jpg");
+  background-image: url("../img/Adsız tasarım.png");
   background-size: cover;
   background-position: center;
-  height: 100vh; }
+  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
+  min-height: 500px;
+  background-attachment: fixed; }
 
-.text {
-  padding-top: 150px; }
-  .text h1 {
+#images {
+  background-color: #ecefed;
+  padding-top: 30px; }
+  #images .header {
     color: #2a22a7;
-    font-weight: 700; }
-
-#info {
-  background: #033894;
-  color: #ffffff; }
-  #info h4 {
-    font-weight: 700; }
-
-#footer {
-  background: black;
-  color: white; }
-
-.swiper-container {
-  width: 50%;
-  height: 100%; }
+    font-weight: 700;
+    padding-bottom: 20px; }
 
 .swiper-slide {
   text-align: center;
@@ -64,11 +56,35 @@
   justify-content: center;
   align-items: center; }
 
+.swiper-container {
+  width: 50%;
+  height: 90%; }
+
+.text {
+  padding-top: 150px;
+  z-index: 1; }
+  .text h1 {
+    color: #2a22a7;
+    font-weight: 700;
+    font-size: 50px; }
+
+#info {
+  background: #033894;
+  color: #ffffff; }
+  #info h4 {
+    font-weight: 700; }
+
+#footer {
+  background: black;
+  color: white; }
+
 @media screen and (max-width: 768px) {
   #navbarCollapse {
     align-items: center;
     text-align: center; }
-  #images {
-    padding-bottom: 75px; }
   #main {
-    padding: 20px 0; } }
+    padding: 20px 0; }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px; } }
