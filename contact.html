@@ -117,7 +117,14 @@
               </form>
            
                 <h1 class="text-center pb-4">Adresimiz</h1>
-                <div id="map"></div>
+                <div class="card mb-3 text-center">
+                  <img class="card-img-top" src="img/HKV YAPI.png" alt="Card image cap">
+                  <div class="card-body">
+                    <a href="https://www.google.com/maps/place/39%C2%B054'34.3%22N+32%C2%B049'03.6%22E/@39.9095649,32.8175702,19z/data=!4m6!3m5!1s0!7e2!8m2!3d39.9095176!4d32.8176766" class="btn btn-primary text-light">Google Maps</a>
+                    <p class="card-text"><small class="text-muted">Last updated 12.12.2020</small></p>
+                  </div>
+                </div>
+                
         </div>
         
       </section>
@@ -151,26 +158,8 @@
               <p>COPYRIGHT © 2020 HKVYAPİ.COM. ALL RIGHTS RESERVED. | yigiter.dev</p>
           </div>
       </section>
-      <script>
-          function initMap() {
-  // The location of Uluru
-        const uluru = { lat: 39.909518, lng: 32.817677 };
-  // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 18,
-        center: uluru,
-    });
-  // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-    });
-}
-      </script>
-      <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMLprnhtpIAEE0DMEyYMrrmMbFccd7T64&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>  
+      
+      
    
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -188,5 +177,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/medium-zoom.min.js"></script>
+    <script src = "./js/projects.js"></script>
+    
   </body>
 </html>
