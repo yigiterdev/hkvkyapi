@@ -1,8 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
 
 .menu-btn {
   position: absolute;
@@ -10,16 +12,40 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
-  .menu-btn .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #033894;
-    transition: all 0.5s ease-out; }
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #033894;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
+}
 
 #main {
-  background-image: url("../img/Adsız tasarım.png");
+  background-image: url("../img/Adsız tasarım.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -28,24 +54,33 @@
   height: calc(var(--vh, 1vh) * 100);
   height: 100vh;
   min-height: 200px;
-  background-attachment: fixed; }
-  #main .navbar .nav-item .nav-link {
-    color: #033894;
-    margin: 10px;
-    font-weight: 700; }
-    #main .navbar .nav-item .nav-link:hover {
-      background-color: #2a22a7;
-      color: #ffffff;
-      border-radius: 15px;
-      transition: all 0.5s ease-out; }
+  background-attachment: fixed;
+}
+
+#main .navbar .nav-item .nav-link {
+  color: #033894;
+  margin: 10px;
+  font-weight: 700;
+}
+
+#main .navbar .nav-item .nav-link:hover {
+  background-color: #2a22a7;
+  color: #ffffff;
+  border-radius: 15px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 
 #images {
   background-color: #ecefed;
-  padding-top: 30px; }
-  #images .header {
-    color: #2a22a7;
-    font-weight: 700;
-    padding-bottom: 20px; }
+  padding-top: 30px;
+}
+
+#images .header {
+  color: #2a22a7;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
 
 .swiper-slide {
   text-align: center;
@@ -53,32 +88,44 @@
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .swiper-container {
   width: 50%;
-  height: 90%; }
+  height: 90%;
+}
 
 .text {
   padding-top: 150px;
-  z-index: 1; }
-  .text h1 {
-    color: #2a22a7;
-    font-weight: 700;
-    font-size: 50px; }
+  z-index: 1;
+}
+
+.text h1 {
+  color: #2a22a7;
+  font-weight: 700;
+  font-size: 50px;
+}
 
 #info {
   background: #033894;
-  color: #ffffff; }
-  #info h4 {
-    font-weight: 700; }
+  color: #ffffff;
+}
+
+#info h4 {
+  font-weight: 700;
+}
 
 #footer {
   background: black;
-  color: white; }
+  color: white;
+}
 
 #main_about {
   background-image: url("../img/c-dustin-91AQt9p4Mo8-unsplash.jpg");
@@ -89,22 +136,31 @@
   background-position: center;
   height: 100vh;
   min-height: 200px;
-  background-attachment: fixed; }
-  #main_about .navbar .nav-item .nav-link {
-    color: white;
-    margin: 10px;
-    font-weight: 700; }
-    #main_about .navbar .nav-item .nav-link:hover {
-      background-color: #2a22a7;
-      color: #ffffff;
-      border-radius: 15px;
-      transition: all 0.5s ease-out; }
+  background-attachment: fixed;
+}
+
+#main_about .navbar .nav-item .nav-link {
+  color: white;
+  margin: 10px;
+  font-weight: 700;
+}
+
+#main_about .navbar .nav-item .nav-link:hover {
+  background-color: #2a22a7;
+  color: #ffffff;
+  border-radius: 15px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 
 #about {
-  background-color: #ecefed; }
-  #about h1 {
-    color: #2a22a7;
-    font-weight: 700; }
+  background-color: #ecefed;
+}
+
+#about h1 {
+  color: #2a22a7;
+  font-weight: 700;
+}
 
 #main-contact {
   background-image: url("../img/wallpaperflare.com_wallpaper.jpg");
@@ -116,30 +172,42 @@
   height: calc(var(--vh, 1vh) * 100);
   height: 100vh;
   min-height: 200px;
-  background-attachment: fixed; }
-  #main-contact h1 {
-    color: white; }
-  #main-contact .navbar .nav-item .nav-link {
-    color: white;
-    margin: 10px;
-    font-weight: 700; }
-    #main-contact .navbar .nav-item .nav-link:hover {
-      background-color: #2a22a7;
-      color: #ffffff;
-      border-radius: 15px;
-      transition: all 0.5s ease-out; }
+  background-attachment: fixed;
+}
+
+#main-contact h1 {
+  color: white;
+}
+
+#main-contact .navbar .nav-item .nav-link {
+  color: white;
+  margin: 10px;
+  font-weight: 700;
+}
+
+#main-contact .navbar .nav-item .nav-link:hover {
+  background-color: #2a22a7;
+  color: #ffffff;
+  border-radius: 15px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 
 #contact {
-  background-color: #ecefed; }
-  #contact h1 {
-    color: #2a22a7;
-    font-weight: 700; }
+  background-color: #ecefed;
+}
+
+#contact h1 {
+  color: #2a22a7;
+  font-weight: 700;
+}
 
 #map {
   height: 400px;
   /* The height is 400 pixels */
   width: 100%;
-  /* The width is the width of the web page */ }
+  /* The width is the width of the web page */
+}
 
 #main-projects {
   background-image: url("../img/wallpaperflare.com_wallpaper kopyası.jpg");
@@ -151,40 +219,61 @@
   height: calc(var(--vh, 1vh) * 100);
   height: 100vh;
   min-height: 200px;
-  background-attachment: fixed; }
-  #main-projects h1 {
-    color: white; }
-  #main-projects .navbar .nav-item .nav-link {
-    color: white;
-    margin: 10px;
-    font-weight: 700; }
-    #main-projects .navbar .nav-item .nav-link:hover {
-      background-color: #2a22a7;
-      color: #ffffff;
-      border-radius: 15px;
-      transition: all 0.5s ease-out; }
+  background-attachment: fixed;
+}
+
+#main-projects h1 {
+  color: white;
+}
+
+#main-projects .navbar .nav-item .nav-link {
+  color: white;
+  margin: 10px;
+  font-weight: 700;
+}
+
+#main-projects .navbar .nav-item .nav-link:hover {
+  background-color: #2a22a7;
+  color: #ffffff;
+  border-radius: 15px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 
 #projects {
-  background-color: #ecefed; }
-  #projects h1 {
-    font-size: 25px;
-    font-weight: 700;
-    color: #2a22a7; }
+  background-color: #ecefed;
+}
+
+#projects h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #2a22a7;
+}
 
 @media screen and (max-width: 768px) {
   #navbarCollapse {
-    align-items: center;
-    text-align: center; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
   #main {
     padding: 20px 0;
-    background-attachment: scroll; }
+    background-attachment: scroll;
+  }
   #main_about {
-    background-attachment: scroll; }
+    background-attachment: scroll;
+  }
   #main-contact {
-    background-attachment: scroll; }
+    background-attachment: scroll;
+  }
   #main-projects {
-    background-attachment: scroll; }
+    background-attachment: scroll;
+  }
   .swiper-container {
     width: 100%;
     height: 100%;
-    padding-bottom: 40px; } }
+    padding-bottom: 40px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
